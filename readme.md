@@ -1,7 +1,6 @@
 # 🚀 JobNexus – MERN Stack Job Portal  
 
-🌐 **Live Demo:** <a href="https://job-nexus-pearl.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-
+🌐 **Live Demo:** [https://job-nexus-pearl.vercel.app/](https://job-nexus-pearl.vercel.app/)
 
 [![MERN](https://img.shields.io/badge/Stack-MERN-green?style=flat-square&logo=mongodb)]()  
 [![Frontend](https://img.shields.io/badge/Frontend-React-blue?style=flat-square&logo=react)]()  
@@ -45,7 +44,7 @@ Easily find jobs, manage companies, post openings, and track applications — al
 
 ## 🔗 Live Demo
 
-Experience the live app here: <a href="https://job-nexus-pearl.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+Experience the live app here: [https://job-nexus-pearl.vercel.app/](https://job-nexus-pearl.vercel.app/)
 
 
 
@@ -58,7 +57,7 @@ Experience the live app here: <a href="https://job-nexus-pearl.vercel.app/" targ
 
 \`\`\`bash
 # Clone repo
-git clone https://github.com/Akash-Raj9/jobnexus-job-portal.git
+git clone https://github.com/Akash-Raj9/JobNexus.git
 cd jobnexus-job-portal
 
 # Install backend
