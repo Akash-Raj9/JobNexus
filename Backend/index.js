@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: ["http://localhost:5173","https://jobnexus-tau.vercel.app"],
+  origin: ["http://localhost:5173","https://job-nexus-pearl.vercel.app"],
   credentials: true,
 };
 
