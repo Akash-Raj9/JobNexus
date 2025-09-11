@@ -1,69 +1,84 @@
-🚀 JobNexus – MERN Stack Job Portal
-Welcome to JobNexus, a modern job portal app created with the MERN stack and powered by secure media uploads with Cloudinary.
-Find your dream job, manage companies, and experience an intuitive interface!
+# 🚀 JobNexus – MERN Stack Job Portal  
 
-🏆 Features
-🔒 Authentication — JWT-secured, separate roles for Students & Recruiters
+[![MERN](https://img.shields.io/badge/Stack-MERN-green?style=flat-square&logo=mongodb)]()  
+[![Frontend](https://img.shields.io/badge/Frontend-React-blue?style=flat-square&logo=react)]()  
+[![Backend](https://img.shields.io/badge/Backend-Express-black?style=flat-square&logo=express)]()  
+[![Database](https://img.shields.io/badge/Database-MongoDB-brightgreen?style=flat-square&logo=mongodb)]()  
+[![Deployed](https://img.shields.io/badge/Deployed-Live-success?style=flat-square&logo=vercel)]()  
 
-👤 Profile Management — Bio, profile avatar, resume upload (Cloudinary)
+**JobNexus** is a modern job portal built with the MERN stack, designed for both **Students** and **Recruiters**.  
+Easily find jobs, manage companies, post openings, and track applications — all within a sleek, intuitive UI.  
 
-🏢 Company & Job Posting — Recruiters post/manage companies and jobs
+---
 
-📤 Media Uploads via Cloudinary — Logos, avatars, resumes, and more!
+## ✨ Features  
 
-📑 Application Tracking — Dashboards for recruiters & job applicants
+- 🔒 **Authentication** — Secure login/signup with JWT, role-based (Student/Recruiter)  
+- 👤 **Profile Management** — Bio, profile avatar, resume upload (Cloudinary)  
+- 🏢 **Company & Job Posting** — Recruiters can add/manage companies & jobs  
+- 📤 **Media Uploads** — Instant uploads to **Cloudinary** (logos, resumes, avatars)  
+- 📑 **Application Tracking** — Recruiter & applicant dashboards  
+- 🔍 **Search & Filter** — Smart search, instant filtering for jobs/companies  
+- 🤩 **Modern UI** — Responsive design, TailwindCSS styling, Framer Motion animations  
+- ⚡ **RESTful APIs** — Scalable Node.js & Express backend  
+- 🌎 **Deployment Ready** — Vercel (frontend), Render/Heroku (backend), MongoDB Atlas  
 
-🔍 Search & Filter — Instant job and company search, robust filtering
+---
 
-🤩 Engaging UI — Responsive layouts, elegant TailwindCSS, smooth Framer Motion animations
+## 🛠️ Tech Stack  
 
-⚡ RESTful APIs — Reliable, scalable Node.js & Express backend
+| Layer      | Tools & Libraries |  
+|------------|-------------------|  
+| **Frontend** | React, Redux Toolkit, TailwindCSS, Framer Motion, shadcn/ui |  
+| **Backend** | Node.js, Express.js |  
+| **Database** | MongoDB Atlas |  
+| **Auth** | JWT (Cookies) |  
+| **Media Upload** | Cloudinary, Multer |  
+| **Utilities** | EmailJS |  
 
-🌎 Live Deployment — Frontend on Vercel, backend on Render/Heroku, database on MongoDB Atlas
+---
 
-💻 Tech Stack
-Layer	Tools & Libraries
-Frontend	React, Redux Toolkit, TailwindCSS, Framer Motion, shadcn/ui
-Backend	Node.js, Express.js
-Database	MongoDB Atlas
-Auth	JWT (Cookies)
-Media Upload	Cloudinary, Multer
-Utilities	EmailJS
-🛠️ Getting Started
-Prerequisites
-Node.js / npm
+## ⚡ Getting Started  
 
-MongoDB Atlas & Cloudinary account
+### 🔑 Prerequisites  
+- Node.js & npm  
+- MongoDB Atlas account  
+- Cloudinary account  
 
-Installation
-1. Clone the repo
+### 🚀 Installation  
 
-bash
+\`\`\`bash
+# Clone repo
 git clone https://github.com/Akash-Raj9/jobnexus-job-portal.git
 cd jobnexus-job-portal
-2. Install dependencies
 
-bash
+# Install backend
 cd backend && npm install
+
+# Install frontend
 cd ../frontend && npm install
-3. Configure environment variables
+\`\`\`
 
-In /backend/.env:
+### ⚙️ Environment Setup  
 
-text
+**Backend → `/backend/.env`**  
+\`\`\`env
 PORT=8000
 MONGODB_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-In /frontend/.env.local:
+\`\`\`
 
-text
+**Frontend → `/frontend/.env.local`**  
+\`\`\`env
 VITE_API_URL=http://localhost:8000
-4. Start the app
+\`\`\`
 
-bash
+### ▶️ Run the App  
+
+\`\`\`bash
 # Backend
 cd backend
 npm run dev
@@ -71,44 +86,67 @@ npm run dev
 # Frontend
 cd frontend
 npm run dev
-Visit http://localhost:5173 to use the app!
+\`\`\`
 
-🌩️ Cloudinary Integration
-All images, logos, and files are uploaded instantly and securely to Cloudinary and served via fast CDN links. This ensures quality, speed, and reliability for all media across the app.
+Now visit 👉 [http://localhost:5173](http://localhost:5173)  
 
-📁 Project Structure
-text
+---
+
+## 📁 Project Structure  
+
+\`\`\`
 jobnexus-job-portal/
 ├── backend/
-│   ├── models/
-│   ├── controllers/
-│   ├── routes/
-│   ├── middleware/
-│   └── utils/
+│   ├── models/         # Database models
+│   ├── controllers/    # Route controllers
+│   ├── routes/         # API routes
+│   ├── middleware/     # Middlewares
+│   └── utils/          # Helpers & utilities
 ├── frontend/
-│   ├── src/
-│   ├── .env.local
-│   └── vite.config.js
+│   ├── src/            # React source code
+│   ├── .env.local      # Frontend env vars
+│   └── vite.config.js  # Vite config
 └── README.md
-🔗 Main API Endpoints
-/api/auth/ — login/register
+\`\`\`
 
-/api/companies/ — company CRUD, logo upload
+---
 
-/api/jobs/ — job CRUD, attachment upload
+## 🔗 API Endpoints  
 
-/api/applications/ — job applications
+| Endpoint | Description |  
+|----------|-------------|  
+| \`/api/auth/\` | Login / Register |  
+| \`/api/companies/\` | Company CRUD + logo upload |  
+| \`/api/jobs/\` | Job CRUD + attachment upload |  
+| \`/api/applications/\` | Job applications |  
 
-🤝 Author & Community
-Built by Akash Raj
-GitHub
+---
 
-Contributions, issues and feedback are always welcome!
+## 🌩️ Cloudinary Integration  
 
-📄 License
-Licensed under the MIT License.
+All media (avatars, resumes, company logos) are uploaded to **Cloudinary** and served via its **global CDN** for **speed, reliability, and quality**.  
 
-🙏 Acknowledgements
-Special thanks to Cloudinary, MongoDB Atlas, Vercel, shadcn/ui, and the open-source community.
+---
 
-For questions/support, email support@jobnexus.com or open an issue!
+## 👨‍💻 Author  
+
+**Akash Raj**  
+🔗 [GitHub](https://github.com/Akash-Raj9)  
+
+💡 Contributions, issues, and feature requests are welcome!  
+
+---
+
+## 📄 License  
+
+Licensed under the **MIT License**.  
+
+---
+
+## 🙏 Acknowledgements  
+
+- [Cloudinary](https://cloudinary.com) — Media uploads & CDN  
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) — Database hosting  
+- [Vercel](https://vercel.com) — Frontend hosting  
+- [shadcn/ui](https://ui.shadcn.com) — Modern UI components  
+- The **open-source community** ❤️  
