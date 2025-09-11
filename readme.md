@@ -1,5 +1,7 @@
 # 🚀 JobNexus – MERN Stack Job Portal  
 
+🌐 **Live Demo:** [https://job-nexus-pearl.vercel.app/](https://job-nexus-pearl.vercel.app/)
+
 [![MERN](https://img.shields.io/badge/Stack-MERN-green?style=flat-square&logo=mongodb)]()  
 [![Frontend](https://img.shields.io/badge/Frontend-React-blue?style=flat-square&logo=react)]()  
 [![Backend](https://img.shields.io/badge/Backend-Express-black?style=flat-square&logo=express)]()  
@@ -39,6 +41,11 @@ Easily find jobs, manage companies, post openings, and track applications — al
 ---
 
 ## ⚡ Getting Started  
+
+## 🔗 Live Demo
+
+Experience the live app here: [https://job-nexus-pearl.vercel.app/](https://job-nexus-pearl.vercel.app/)
+
 
 ### 🔑 Prerequisites  
 - Node.js & npm  
