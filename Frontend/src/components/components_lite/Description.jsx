@@ -26,6 +26,11 @@ const Description = () => {
   const [isApplied, setIsApplied] = useState(isIntiallyApplied);
 
   const applyJobHandler = async () => {
+    // description_update
+    if (!user) {
+        toast.error("Please login or signup to apply for jobs");
+        return;
+    } // till here
     try {
       const res = await axios.get(
         `${APPLICATION_API_ENDPOINT}/apply/${jobId}`,
