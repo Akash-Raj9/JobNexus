@@ -3,7 +3,7 @@ import { COMPANY_API_ENDPOINT } from "@/utils/data";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-
+// changed the file name
 const useGetAllCompanies = () => {
   const dispatch = useDispatch();
   useEffect(() => {
