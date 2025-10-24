@@ -61,6 +61,7 @@ const Register = () => {
         toast.success(res.data.message);
       }
     } catch (error) {
+      dispatch(setLoading(false));
       const errorMessage = error.response
         ? error.response.data.message
         : "An unexpected error occurred.";
